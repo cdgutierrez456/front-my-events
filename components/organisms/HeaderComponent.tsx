@@ -30,8 +30,8 @@ export default function HeaderComponent() {
             />
           </div>
           <div className="absolute left-0 hidden w-40 bg-white shadow-lg rounded-md group-hover:block overflow-hidden">
-            <Link href="#" className="block px-4 py-2 text-sm/6 text-gray-700 hover:bg-gray-100">Listar</Link>
-            <Link href="#" className="block px-4 py-2 text-sm/6 text-gray-700 hover:bg-gray-100">Crear</Link>
+            <Link href="/admin/eventos/listado" className="block px-4 py-2 text-sm/6 text-gray-700 hover:bg-gray-100">Listar</Link>
+            <Link href="/admin/eventos/crear" className="block px-4 py-2 text-sm/6 text-gray-700 hover:bg-gray-100">Crear</Link>
           </div>
         </div>
         <div className="relative group inline-block">
@@ -45,8 +45,8 @@ export default function HeaderComponent() {
             />
           </div>
           <div className="absolute left-0 hidden w-40 bg-white shadow-lg rounded-md group-hover:block overflow-hidden">
-            <Link href="#" className="block px-4 py-2 text-sm/6 text-gray-700 hover:bg-gray-100">Listar</Link>
-            <Link href="#" className="block px-4 py-2 text-sm/6 text-gray-700 hover:bg-gray-100">Crear</Link>
+            <Link href="/admin/usuarios/listado" className="block px-4 py-2 text-sm/6 text-gray-700 hover:bg-gray-100">Listar</Link>
+            <Link href="/admin/usuarios/crear" className="block px-4 py-2 text-sm/6 text-gray-700 hover:bg-gray-100">Crear</Link>
           </div>
         </div>
         <div className="relative group inline-block">

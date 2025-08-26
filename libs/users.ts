@@ -1,4 +1,4 @@
-import { LoginDTO, RegisterDTO } from "@/interfaces/User"
+import { LoginDTO, RegisterDTO, UserDAO } from "@/interfaces/User"
 
 import { apiFetch } from "./singletonFetch"
 
@@ -8,4 +8,8 @@ export const loginUser = async (body: LoginDTO) => {
 
 export const registerUser = async (body: RegisterDTO) => {
   await apiFetch('/users/register', 'POST', body)
+}
+
+export const userList = async (): Promise<UserDAO[]> => {
+  return await apiFetch('/users', 'GET')
 }
