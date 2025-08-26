@@ -1,6 +1,11 @@
 export interface EventDTO {
-  name: string
-  initial_hour: string
-  end_hour: string
+  event_name: string
+  initial_date: string
+  end_date: string
   speaker_name: string
+}
+
+export interface EventDAO extends EventDTO {
+  id_event: number
+  state_id: number
 }

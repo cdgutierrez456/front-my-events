@@ -22,14 +22,17 @@ export default function LoginComponent() {
 
   const onSubmitForm: SubmitHandler<LoginDTO> = (data) => {
     setIsSubmiting(true)
-    router.replace('/admin')
-    // loginUser(data)
-    // .then(data => {
-    //   console.log('data', data);
-    // })
-    // .catch(e => {
-    //   alert(`Error en comunicación con endpoint. ${e}`)
-    // })
+    loginUser(data)
+    .then(data => {
+      setIsSubmiting(false)
+      localStorage.setItem('token', data.access_token)
+      router.replace('/admin')
+      alert('Sesion exitosa')
+    })
+    .catch(e => {
+      setIsSubmiting(false)
+      alert(`Error en comunicación con endpoint. Verifica credenciales`)
+    })
   }
 
   const onError: SubmitErrorHandler<LoginDTO> = () => {
@@ -37,7 +40,7 @@ export default function LoginComponent() {
   }
 
   return (
-    <form onSubmit={handleSubmit(onSubmitForm, onError)} className="flex flex-col w-1/2">
+    <form onSubmit={handleSubmit(onSubmitForm, onError)} className="flex flex-col w-1/2 max-w-2xs">
       <div className="border-b border-white/10">
         <h2 className="text-base/7 font-semibold text-black text-center">Ingresa tus credenciales</h2>
         <div>
