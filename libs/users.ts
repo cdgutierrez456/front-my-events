@@ -11,5 +11,5 @@ export const registerUser = async (body: RegisterDTO) => {
 }
 
 export const userList = async (): Promise<UserDAO[]> => {
-  return await apiFetch('/users', 'GET')
+  return await apiFetch('/users/', 'GET')
 }
