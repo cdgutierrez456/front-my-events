@@ -20,19 +20,19 @@ Este repositorio corresponde al **frontend** del sistema.
 ---
 
 ## 📁 Estructura del proyecto
-/app
-/admin/eventos/crear       → Página para crear eventos
-/admin/eventos/listado     → Página para listar eventos
-/admin/usuarios/crear      → Página para crear usuarios
-/admin/usuarios/listado    → Página para listar usuarios
+- /app
+- /admin/eventos/crear       → Página para crear eventos
+- /admin/eventos/listado     → Página para listar eventos
+- /admin/usuarios/crear      → Página para crear usuarios
+- /admin/usuarios/listado    → Página para listar usuarios
 
-/components
-/molecules                 → Formularios y componentes compuestos
-/organisms                 → Listados, encabezados y filtros
+- /components
+- /molecules                 → Formularios y componentes compuestos
+- /organisms                 → Listados, encabezados y filtros
 
-/interfaces                 → Tipado con TypeScript
-/libs                       → Lógica de consumo API (fetch)
-/schemes                    → Validaciones con Zod
+- /interfaces                 → Tipado con TypeScript
+- /libs                       → Lógica de consumo API (fetch)
+- /schemes                    → Validaciones con Zod
 
 ---
 
