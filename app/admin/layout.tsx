@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 
+import HeaderComponent from "@/components/organisms/HeaderComponent";
+
 export const metadata: Metadata = {
-  title: "Tus EVENTOS",
-  description: "Administra eventos, perfiles, usuarios, etc, de forma facil y rapida",
+  title: "Bienvenido administrador",
+  description: "Modulo adminstrativo de TUS EVENTOS.",
 };
 
 export default function RootLayout({
@@ -12,6 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <main>
+      <HeaderComponent />
       {children}
     </main>
   );
