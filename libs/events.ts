@@ -7,9 +7,9 @@ export const eventsList = async (): Promise<EventDAO[]> => {
 }
 
 export const createEvent = async (body: EventDTO) => {
-  await apiFetch('/events/create', 'POST', body)
+  await apiFetch('/events/create/', 'POST', body)
 }
 
 export const deleteEvent = async (id: EventDAO['id_event']) => {
-  await apiFetch(`/events/${id}`, 'DELETE')
+  await apiFetch(`/events/${id}/`, 'DELETE')
 }
